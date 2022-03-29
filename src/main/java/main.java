@@ -10,5 +10,6 @@ public class main {
         PrintUtil.printResult("无重复字符的最长子串", LengthOfLongestSubstring.lengthOfLongestSubstring("134535"));
         PrintUtil.printResult("字符串转换整数",MyAtoi.myAtoi("2147483648"));
         PrintUtil.printResult("有效的括号",IsValidBrackets.isValidBrackets("()[]{}"));
+        PrintUtil.printResult("字符串相乘",TwoNumMultiply.multiply1("21","222"));
     }
 }
