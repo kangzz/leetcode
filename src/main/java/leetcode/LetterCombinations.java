@@ -1,5 +1,6 @@
 package leetcode;
 
+import java.security.InvalidParameterException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -34,7 +35,11 @@ public class LetterCombinations {
             result.add(tmp);
             return;
         }
-        for (int i = 0 ; i < map.get(digits.charAt(index)).length; i++) {
+        String[] arr = map.get(digits.charAt(index));
+        if(arr == null){
+            throw new InvalidParameterException("非法参数");
+        }
+        for (int i = 0 ; i < arr.length; i++) {
             // 回溯
             findCombinations(digits, index+1, tmp + map.get(digits.charAt(index))[i], map);
         }
