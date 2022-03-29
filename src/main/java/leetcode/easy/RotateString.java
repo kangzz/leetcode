@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.easy;
 
 /**
  * 旋转字符串

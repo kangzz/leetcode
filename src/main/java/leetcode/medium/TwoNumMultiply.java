@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.medium;
 
 /**
  * 字符串相乘

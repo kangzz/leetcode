@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.medium;
 
 import java.security.InvalidParameterException;
 import java.util.*;
